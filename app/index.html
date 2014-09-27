@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>
+<html lang="en" ng-app="myApp" class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>
+<html lang="en" ng-app="myApp" class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>
+<html lang="en" ng-app="myApp" class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html lang="en" ng-app="myApp" class="no-js"> <!--<![endif]-->
+<head>
+    <meta charset="utf-8">
+    <title>test2</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="/favicon.ico">
+    <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+    <!-- build:css(.) styles/vendor.css -->
+    <!-- bower:css -->
+    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css"/>
+    <!--<link rel="stylesheet" href="bower_components/font-awesome-animation/dist/font-awesome-animation.css"/>-->
+    <link rel="stylesheet" href="bower_components/font-awesome/css/font-awesome.css"/>
+    <!--<link rel="stylesheet" href="bower_components/angular-bootstrap-colorpicker/css/colorpicker.css"/>-->
+    <!--<link rel="stylesheet" href="bower_components/fullcalendar/fullcalendar.css"/>-->
+    <!--<link rel="stylesheet" href="bower_components/select2/select2.css"/>-->
+    <!--<link rel="stylesheet" href="bower_components/datatables/media/css/jquery.dataTables.css"/>-->
+    <!--<link rel="stylesheet" href="bower_components/bootstrap-daterangepicker/daterangepicker-bs3.css"/>-->
+    <!--<link rel="stylesheet" href="bower_components/summernote/dist/summernote.css"/>-->
+    <!-- endbower -->
+    <!-- endbuild -->
+
+    <!--<link href="http://fonts.useso.com/css?family=Lato:100,300,400,700" media="all" rel="stylesheet" type="text/css"/>-->
+    <!-- build:css(.tmp) styles/main.css -->
+    <!--<link rel="stylesheet" href="styles/main.css">-->
+    <link href="styles/mason-font.css" media="all" rel="stylesheet" type="text/css"/>
+    <link href="styles/style.css" media="all" rel="stylesheet" type="text/css"/>
+    <!--<link href="styles/color/green.css" media="all" rel="alternate stylesheet" title="green-theme"-->
+          <!--type="text/css"/>-->
+    <!--<link href="styles/color/orange.css" media="all" rel="alternate stylesheet" title="orange-theme"-->
+          <!--type="text/css"/>-->
+    <!--<link href="styles/color/magenta.css" media="all" rel="alternate stylesheet" title="magenta-theme"-->
+          <!--type="text/css"/>-->
+    <!--<link href="styles/color/gray.css" media="all" rel="alternate stylesheet" title="gray-theme" type="text/css"/>-->
+    <!-- endbuild -->
+</head>
+<body>
+
+<!--[if lt IE 7]>
+<p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade
+    your browser</a> to improve your experience.</p>
+<![endif]-->
+
+<div ng-include="'html/include/header.html'"></div>
+
+<div class="container-fluid">
+    <div class="container" ng-view></div>
+</div>
+
+<!-- build:js(.) scripts/vendor.js -->
+<!-- bower:js -->
+<script src="bower_components/es5-shim/es5-shim.js"></script>
+<script src="bower_components/jquery/dist/jquery.js"></script>
+<script src="bower_components/angular/angular.js"></script>
+<script src="bower_components/angular-route/angular-route.js"></script>
+<!--<script src="bower_components/angular-scenario/angular-scenario.js"></script>-->
+<!--<script src="bower_components/angular-animate/angular-animate.js"></script>-->
+<!--<script src="bower_components/angular-touch/angular-touch.js"></script>-->
+<!--<script src="bower_components/angular-cookies/angular-cookies.js"></script>-->
+<!--<script src="bower_components/angular-messages/angular-messages.js"></script>-->
+<!--<script src="bower_components/angular-resource/angular-resource.js"></script>-->
+<!--<script src="bower_components/underscore/underscore.js"></script>-->
+<!--<script src="bower_components/angular-sanitize/angular-sanitize.js"></script>-->
+<!--<script src="bower_components/angular-file-upload/angular-file-upload.js"></script>-->
+<!--<script src="bower_components/fastclick/lib/fastclick.js"></script>-->
+<!--<script src="bower_components/overthrow/dist/overthrow.js"></script>-->
+<!--<script src="bower_components/mobile-angular-ui/dist/js/mobile-angular-ui.min.js"></script>-->
+<!--<script src="bower_components/angular-bootstrap-colorpicker/js/bootstrap-colorpicker-module.js"></script>-->
+<!--<script src="bower_components/get-style-property/get-style-property.js"></script>-->
+<!--<script src="bower_components/get-size/get-size.js"></script>-->
+<!--<script src="bower_components/matches-selector/matches-selector.js"></script>-->
+<!--<script src="bower_components/eventie/eventie.js"></script>-->
+<!--<script src="bower_components/doc-ready/doc-ready.js"></script>-->
+<!--<script src="bower_components/eventEmitter/EventEmitter.js"></script>-->
+<!--<script src="bower_components/jquery-bridget/jquery.bridget.js"></script>-->
+<!--<script src="bower_components/outlayer/item.js"></script>-->
+<!--<script src="bower_components/outlayer/outlayer.js"></script>-->
+<!--<script src="bower_components/masonry/masonry.js"></script>-->
+<!--<script src="bower_components/isotope/js/item.js"></script>-->
+<!--<script src="bower_components/isotope/js/layout-mode.js"></script>-->
+<!--<script src="bower_components/isotope/js/isotope.js"></script>-->
+<!--<script src="bower_components/isotope/js/layout-modes/vertical.js"></script>-->
+<!--<script src="bower_components/isotope/js/layout-modes/fit-rows.js"></script>-->
+<!--<script src="bower_components/isotope/js/layout-modes/masonry.js"></script>-->
+<!--<script src="bower_components/jquery-ui/ui/jquery-ui.js"></script>-->
+<!--<script src="bower_components/fullcalendar/fullcalendar.js"></script>-->
+<!--<script src="bower_components/angular-ui-calendar/src/calendar.js"></script>-->
+<!--<script src="bower_components/lodash/dist/lodash.compat.js"></script>-->
+<!--<script src="bower_components/angular-wizard/dist/angular-wizard.js"></script>-->
+<!--<script src="bower_components/select2/select2.js"></script>-->
+<!--<script src="bower_components/angular-ui-select2/src/select2.js"></script>-->
+<!--<script src="bower_components/datatables/media/js/jquery.dataTables.js"></script>-->
+<!--<script src="bower_components/angular-datatables/dist/angular-datatables.js"></script>-->
+<!--<script src="bower_components/moment/moment.js"></script>-->
+<!--<script src="bower_components/bootstrap-daterangepicker/daterangepicker.js"></script>-->
+<!--<script src="bower_components/angular-daterangepicker/js/angular-daterangepicker.js"></script>-->
+<!--<script src="bower_components/summernote/dist/summernote.js"></script>-->
+<!--<script src="bower_components/angular-summernote/dist/angular-summernote.min.js"></script>-->
+<!--<script src="bower_components/angular-http-auth/src/http-auth-interceptor.js"></script>-->
+<!--<script src="bower_components/headroom.js/dist/headroom.js"></script>-->
+<!--<script src="bower_components/headroom.js/dist/angular.headroom.js"></script>-->
+<!-- endbower -->
+<!-- endbuild -->
+
+<!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+<!--<script>-->
+<!--(function (b, o, i, l, e, r) {-->
+<!--b.GoogleAnalyticsObject = l;-->
+<!--b[l] || (b[l] =-->
+<!--function () {-->
+<!--(b[l].q = b[l].q || []).push(arguments)-->
+<!--});-->
+<!--b[l].l = +new Date;-->
+<!--e = o.createElement(i);-->
+<!--r = o.getElementsByTagName(i)[0];-->
+<!--e.src = '//www.google-analytics.com/analytics.js';-->
+<!--r.parentNode.insertBefore(e, r)-->
+<!--}(window, document, 'script', 'ga'));-->
+<!--ga('create', 'UA-XXXXX-X');-->
+<!--ga('send', 'pageview');-->
+<!--</script>-->
+
+<!-- build:js(.) scripts/plugins.js -->
+<script src="bower_components/bootstrap/js/affix.js"></script>
+<script src="bower_components/bootstrap/js/alert.js"></script>
+<script src="bower_components/bootstrap/js/dropdown.js"></script>
+<script src="bower_components/bootstrap/js/tooltip.js"></script>
+<script src="bower_components/bootstrap/js/modal.js"></script>
+<script src="bower_components/bootstrap/js/transition.js"></script>
+<script src="bower_components/bootstrap/js/button.js"></script>
+<script src="bower_components/bootstrap/js/popover.js"></script>
+<script src="bower_components/bootstrap/js/carousel.js"></script>
+<script src="bower_components/bootstrap/js/scrollspy.js"></script>
+<script src="bower_components/bootstrap/js/collapse.js"></script>
+<script src="bower_components/bootstrap/js/tab.js"></script>
+<!-- endbuild -->
+
+<!-- build:js({app,.tmp}) scripts/main.js -->
+<script src="scripts/main.js"></script>
+<script src="scripts/app.js"></script>
+<!--<script src="scripts/controllers/controllers.js"></script>-->
+<!--<script src="scripts/directives/directives.js"></script>-->
+<!--<script src="scripts/filters/filters.js"></script>-->
+<!--<script src="scripts/services/services.js"></script>-->
+<script src="view1/view1.js"></script>
+<script src="components/version/version.js"></script>
+<script src="components/version/version-directive.js"></script>
+<script src="components/version/interpolate-filter.js"></script>
+<!-- endbuild -->
+</body>
+</html>

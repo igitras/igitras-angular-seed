@@ -1,0 +1,80 @@
+@font-face {
+  font-family: 'mason';
+  src:url('../font/mason.eot');
+  src:url('../font/masond41d.eot?#iefix') format('embedded-opentype'),
+    url('../font/mason.woff') format('woff'),
+    url('../font/mason.ttf') format('truetype'),
+    url('../font/mason.svg#mason') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* Use the following CSS code if you want to use data attributes for inserting your icons */
+[data-icon]:before {
+  font-family: 'mason';
+  content: attr(data-icon);
+  speak: none;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Use the following CSS code if you want to have a class per icon */
+/*
+Instead of a list of all class selectors,
+you can use the generic selector below, but it's slower:
+[class*="mason-"] {
+*/
+.mason-home, .mason-feed, .mason-star, .mason-forms, .mason-tables, .mason-charts, .mason-pages, .mason-gallery, .mason-flag, .mason-envelope, .mason-gear {
+  font-family: 'mason';
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+}
+.mason-home:before {
+  content: "\e006";
+}
+.mason-feed:before {
+  content: "\e002";
+}
+.mason-star:before {
+  content: "\e003";
+}
+.mason-forms:before {
+  content: "\e004";
+}
+.mason-tables:before {
+  content: "\e00a";
+}
+.mason-charts:before {
+  content: "\e007";
+}
+.mason-pages:before {
+  content: "\e008";
+}
+.mason-gallery:before {
+  content: "\e009";
+}
+.mason-flag:before {
+  content: "\e000";
+}
+.mason-envelope:before {
+  content: "\e005";
+}
+.mason-gear:before {
+  content: "\e001";
+}
+
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+  @font-face {
+  font-family: 'mason';
+  src: url('../font/mason.svg#mason') format('svg');
+  }
+}
